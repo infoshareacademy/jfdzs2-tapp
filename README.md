@@ -1,16 +1,18 @@
-# Nazwa: TAPP TEAM
-
-## W składzie:
-1. Thuy
-2. Ania
-3. Przemek
-4. Piotrek
-
-## Zakres: znalezc najwiecej rzeczy wspolnych z znajomymi na FB
+# TAPP TEAM
+## Autorzy
+- Ania
+- Thuy
+- Przemek
+- Piotrek
+## Zakres
+Znalezc najwiecej rzeczy wspolnych z znajomymi na FB
 
 Temat projektu: "Co nas łączy?"
-
-## DOD:
+## Technologie
+Facebook API
+## Funkcjonalność
+Aplikacja ma na celu porównać nasze upodobania z naszymi znajomymi na FB. Dzięki temu możemy wspólnie rozwijać nasze zainteresowania i hobby.
+## DOD
 - RWD,
 - optymalizacja,
 - walidacja,
