@@ -1,23 +1,7 @@
-/*ABOUT ME SECTION*/
-
-.column {
-    float: left;
-    width: 25%;
-    margin-bottom: 10px;
-}
+/*ABOUT US SECTION*/
 
 .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-}
-
-.container {
-    padding: 0 16px;
-}
-
-.container::after, .row::after {
-    content: "";
-    clear: both;
-    display: table;
 }
 
 .title {
