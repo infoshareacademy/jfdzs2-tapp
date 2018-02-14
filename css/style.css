@@ -1,11 +1,17 @@
 body{
     font-size:24px;
-    color:#3333;
+    color:#333333;
     font-family: 'Jura', sans-serif;
 }
 .logo{
     font-size: 50px;
 }
+
+img
+{
+    margin: 0 auto;
+}
+
 .navbar-fixed-top {
     padding: 10px 30px 10px 30px;
 }
@@ -17,7 +23,22 @@ body{
 
 #funkcje_aplikacji {
     background:#88BBD6;
-    height: 300px
+    padding: 10px 30px 10px 30px;
+}
+
+#funkcje_aplikacji img{
+    max-width: 30px;
+}
+.glyphicon {
+    font-size: 35px;
+    margin-right: 10px;
+}
+.function_description {
+    margin-bottom: 15px;
+}
+
+#functions_info{
+    padding: 10px 30px 10px 30px;
 }
 
 /*ABOUT US SECTION*/
@@ -31,18 +52,11 @@ body{
 
 #o_nas {
     background:#cdcdcd;
-    padding-left: 20px;
-    padding-right: 20px;
-}
-
-img {
-    max-height: 95%;
-
+    padding: 10px 30px 10px 30px;
 }
 
 #formularz {
     background: #99D3DF;
-    height: 300px;
 }
 
 .button:hover {
