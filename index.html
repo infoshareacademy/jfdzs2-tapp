@@ -2,47 +2,57 @@
 <html lang="pl">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Jura" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
     <title>Co nas laczy</title>
 </head>
 <body>
 <header>
-    <nav>
-        <ul>
-            <li>Zajawka</li>
-            <li>Funkcje aplikacji</li>
-            <li>Formularz</li>
-            <li>O nas</li>
-            <li>Funkcje aplikacji</li>
-        </ul>
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+
+            </button>
+            <a class="navbar-brand logo" href="#">Co nas łączy</a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li class="active"><a href="#zajawka">Zajawka</a></li>
+                <li><a href="#formularz">Formularz</a></li>
+                <li><a href="#o_nas">O nas</a></li>
+                <li><a href="#funkcje_aplikacji">Funkcje aplikacji</a></li>
+            </ul>
+        </div>
+    </nav>
 </header>
 <main>
-    <div class="row" id="Zajawka">
+    <div class="row" id="zajawka">
         <div class="carousel-inner" role="listbox">
             <div class="item active">
                 <img src="photo/javier-allegue-barros-406855.jpg" alt="">
-                    <div class="carousel-caption">
-                        <h2>Co nas łączy...?</h2>
-                        <p>Dzięki naszej aplikacji możesz porównać swoje i znajomych upodobania na FB, wspólnie rozwijać wasze zainteresowania i hobby. Jesteś ciekawy co Was łączy? Zaproś znajomych do porównania!</p>
-                        <p>
-                            <a class="btn btn-md btn-primary" href="#formularz" role="button">Wypełnij formularz</a>
-                        </p>
-                    </div>
+                <div class="carousel-caption">
+                    <h2>Co nas łączy...?</h2>
+                    <p>Dzięki naszej aplikacji możesz porównać swoje i znajomych upodobania na FB, wspólnie rozwijać
+                        wasze zainteresowania i hobby. Jesteś ciekawy co Was łączy? Zaproś znajomych do porównania!</p>
+                    <p>
+                        <a class="btn btn-md btn-primary" href="#formularz" role="button">Wypełnij formularz</a>
+                    </p>
+                </div>
             </div>
         </div>
     </div>
-    <div class="row" id="formularz">
-    </div>
-    <div class="row" id="o_nas">
 
-    </div>
     <div class="row" id="funkcje_aplikacji">
     </div>
-    <section id="zajawka">
-    </section>
-    <section id="formularz">
+
+    <div class="row" id="formularz">
 
         <div class="intro-header">
             <div class="container" align="center">
@@ -50,12 +60,13 @@
                 <div class="tab-content custom-tab-content" align="center">
                     <div class="subscribe-panel">
                         <h1>Zapisz się na premierę!</h1>
-                        <p>Zostanie do Ciebie wysłany tylko jeden e-mail z informacją o starcie serwisu. Zapewniamy,że Twoje dane,
+                        <p>Zostanie do Ciebie wysłany tylko jeden e-mail z informacją o starcie serwisu. Zapewniamy,że
+                            Twoje dane,
                             które podajesz są w pełni bezpieczne.</p>
                         <form action="" method="post">
+                            <div class="col-md-4 "></div>
 
-                            <div class="col-md-4"></div>
-                            <div class="col-md-4">
+                            <div class="col-md-4 ">
                                 <div class="input-group">
                                     <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"
                                                                        aria-hidden="true"></i></span>
@@ -63,65 +74,60 @@
                                            placeholder="Podaj swój Email"/>
                                 </div>
                             </div>
-                            <div class="col-md-4"></div>
-                            <br/><br/><br/>
-                            <button class="btn .btn-default btn-lg c">Zapisz się!</button>
+                            <div class="col-md-12">
+                                <button class="btn .btn-default btn-lg c">Zapisz się!</button>
+                            </div>
                         </form>
-    <div class="row" id="zajawka">
-    </div>
-    <div class="row" id="formularz">
-
-    </div>
-
-    <div class="container" id="o_nas">
-        <div class="row">
-            <div class=" col-xs-12 col-sm-6 col-md-3 col-lg-3">
-                <img src="images/11942098_1100705059958760_5681161722133647597%20(1).jpg" class="img-responsive card"
-                     alt="Anna">
-                <h2>Anna Waluszko</h2>
-                <p class="title">opis </p>
-                <p>Kilka słów o tobie</p>
-                <p>adres@email.com</p>
-            </div>
-
-            <div class=" col-xs-12 col-sm-6 col-md-3 col-lg-3">
-                <img src="images/34866597.jpeg" class="img-responsive card" alt="Thuy">
-                <h2>Thanh Thuy Wołyniec</h2>
-                <p class="title">Opis</p>
-                <p>Kilka słów o tobie</p>
-                <p>adres@email.com</p>
-            </div>
-
-            <div class=" col-xs-12 col-sm-6 col-md-3 col-lg-3">
-                <img src="images/przemek.jpg" class="img-responsive card" alt="Przemysław">
-                <h2>Przemysław Głowacki</h2>
-                <p class="title">Opis</p>
-                <p>Kilka słów o tobie</p>
-                <p>adres@email.com</p>
-            </div>
-
-
-            <div class=" col-xs-12 col-sm-6 col-md-3 col-lg-3">
-                <img src="images/26239757_197270490851952_6450456217699354360_n.png" class="img-responsive card"
-                     alt="Piotr">
-                <h2>Piotr Kowalczyk</h2>
-                <p class="title">Opis</p>
-                <p>Kilka słów o tobie</p>
-                <p>adres@email.com</p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 
+    <div class="row" id="o_nas">
+        <div class=" col-xs-12 col-sm-6 col-md-3 col-lg-3">
+            <img src="images/11942098_1100705059958760_5681161722133647597%20(1).jpg"
+                 class="img-responsive card"
+                 alt="Anna">
+            <h2>Anna Waluszko</h2>
+            <p class="title">opis </p>
+            <p>Kilka słów o tobie</p>
+            <p>adres@email.com</p>
+        </div>
 
-<div class="row" id="funkcje_aplikacji">
+        <div class=" col-xs-12 col-sm-6 col-md-3 col-lg-3">
+            <img src="images/h.jpg" class="img-responsive card" alt="Thuy">
+            <h2>Thanh Thuy Wołyniec</h2>
+            <p class="title">Opis</p>
+            <p>Kilka słów o tobie</p>
+            <p>adres@email.com</p>
+        </div>
 
-</div>
+        <div class=" col-xs-12 col-sm-6 col-md-3 col-lg-3">
+            <img src="images/przemek.jpg" class="img-responsive card" alt="Przemysław">
+            <h2>Przemysław Głowacki</h2>
+            <p class="title">Opis</p>
+            <p>Kilka słów o tobie</p>
+            <p>adres@email.com</p>
+        </div>
+
+
+        <div class=" col-xs-12 col-sm-6 col-md-3 col-lg-3">
+            <img src="images/26239757_197270490851952_6450456217699354360_n.png"
+                 class="img-responsive card"
+                 alt="Piotr">
+            <h2>Piotr Kowalczyk</h2>
+            <p class="title">Opis</p>
+            <p>Kilka słów o tobie</p>
+            <p>adres@email.com</p>
+        </div>
+    </div>
+</main>
 <footer>
 
 </footer>
 
 
-</main>
 <script src="../bootstrap/jquery.min.js"></script>
 <script src="../bootstrap/bootstrap.min.js"></script>
 </body>

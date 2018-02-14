@@ -1,6 +1,25 @@
+body{
+    font-size:24px;
+    color:#3333;
+    font-family: 'Jura', sans-serif;
+}
+.logo{
+    font-size: 50px;
+}
+.navbar-fixed-top {
+    padding: 10px 30px 10px 30px;
+}
+
+.navbar-default {
+    background-color: #f8f8f894;
+    border-color: #f8f8f894;
+}
+
 #funkcje_aplikacji {
     background:#88BBD6;
-    height: 300px;
+    height: 300px
+}
+
 /*ABOUT US SECTION*/
 
 .card {
@@ -9,18 +28,25 @@
     margin-top: 15px;
     margin-bottom: 15px;
 }
-#formularz {
-    background: #99D3DF;
-    height: 300px;
-img {
-    max-height: 95%;
-}
+
 #o_nas {
     background:#cdcdcd;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+img {
+    max-height: 95%;
+
+}
+
+#formularz {
+    background: #99D3DF;
     height: 300px;
 }
 
 .button:hover {
     background-color: white;
     color:black;
+    margin:20px;
 }
