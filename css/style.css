@@ -1,12 +1,26 @@
 #funkcje_aplikacji {
     background:#88BBD6;
     height: 300px;
+/*ABOUT US SECTION*/
+
+.card {
+    box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.8);
+    padding: 0;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 #formularz {
     background: #99D3DF;
     height: 300px;
+img {
+    max-height: 95%;
 }
 #o_nas {
     background:#cdcdcd;
     height: 300px;
+}
+
+.button:hover {
+    background-color: white;
+    color:black;
 }
