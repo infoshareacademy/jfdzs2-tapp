@@ -1,14 +1,15 @@
-body{
-    font-size:24px;
-    color:#333333;
+body {
+    font-size: 24px;
+    color: #333333;
     font-family: 'Jura', sans-serif;
+    overflow-x: hidden;
 }
-.logo{
+
+.logo {
     font-size: 50px;
 }
 
-img
-{
+img {
     margin: 0 auto;
 }
 
@@ -21,26 +22,6 @@ img
     border-color: #f8f8f894;
 }
 
-#funkcje_aplikacji {
-    background:#88BBD6;
-    padding: 10px 30px 10px 30px;
-}
-
-#funkcje_aplikacji img{
-    max-width: 30px;
-}
-.glyphicon {
-    font-size: 35px;
-    margin-right: 10px;
-}
-.function_description {
-    margin-bottom: 15px;
-}
-
-#functions_info{
-    padding: 10px 30px 10px 30px;
-}
-
 /*ABOUT US SECTION*/
 
 .card {
@@ -51,16 +32,51 @@ img
 }
 
 #o_nas {
-    background:#cdcdcd;
-    padding: 10px 30px 10px 30px;
+    background: #cdcdcd;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 #formularz {
     background: #99D3DF;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 .button:hover {
     background-color: white;
-    color:black;
-    margin:20px;
+    color: black;
+    margin: 20px;
+}
+#funkcje_aplikacji {
+    background: #88BBD6;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+#funkcje_aplikacji h3 {
+    font-weight: bold;
+}
+
+#funkcje_aplikacji img {
+    max-width: 50px;
+}
+#funkcje_aplikacji {
+    text-align: center;
+}
+.glyphicon {
+    font-size: 35px;
+    margin-right: 10px;
+}
+
+.function_description {
+    margin-bottom: 15px;
+}
+
+#functions_info {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+footer{
+    padding:20px;
 }
