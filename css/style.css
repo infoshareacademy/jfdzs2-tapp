@@ -97,7 +97,10 @@ footer{
 @media all and (max-width: 800px){
     #zajawka{
         padding-top: 73px;
-
+    }
+    .function_description {
+        padding: 15px;
+        text-align: center;
     }
     .logo {
         font-size:20px;
@@ -109,5 +112,12 @@ footer{
 @media all and (min-width: 800px){
     .navbar-brand>img {
         max-height: 250%;
+    }
+    #o_nas, #formularz, #functions_info, #funkcje_aplikacji, #zajawka{
+        height: 100vh;
+        display:flex;
+        justify-content: center;
+        flex-direction: column;
+        padding: 0;
     }
 }
