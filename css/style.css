@@ -1,0 +1,123 @@
+body {
+    font-size: 24px;
+    color: #333333;
+    font-family: 'Jura', sans-serif;
+    overflow-x: hidden;
+}
+
+.logo {
+    font-size: 50px;
+}
+.logo a {
+    color: #333333;
+}
+
+img {
+    margin: 0 auto;
+}
+
+.carousel-caption p {
+
+}
+.navbar-fixed-top {
+    padding: 10px 30px 10px 30px;
+}
+
+.navbar-default {
+    background-color: #f8f8f894;
+    border-color: #f8f8f894;
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+    color: #555;
+    background-color: transparent;
+}
+.navbar-brand>img {
+    display: inline-block;
+    max-height: 100%;
+}
+
+/*ABOUT US SECTION*/
+
+.card {
+    box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.8);
+    padding: 0;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+#o_nas {
+    background: #cdcdcd;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+#formularz {
+    background: #99D3DF;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.button:hover {
+    background-color: white;
+    color: black;
+    margin: 20px;
+}
+#funkcje_aplikacji {
+    background: #88BBD6;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    text-align: center;
+}
+
+#funkcje_aplikacji h3 {
+    font-weight: bold;
+}
+
+#funkcje_aplikacji img {
+    max-width: 50px;
+}
+.glyphicon {
+    font-size: 35px;
+    margin-right: 10px;
+}
+
+.function_description {
+    margin-bottom: 15px;
+}
+
+#functions_info {
+    background: #E9E9E9;
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+footer{
+    padding:20px;
+}
+@media all and (max-width: 800px){
+    #zajawka{
+        padding-top: 73px;
+    }
+    .function_description {
+        padding: 15px;
+        text-align: center;
+    }
+    .logo {
+        font-size:20px;
+    }
+    .carousel-caption p {
+        font-size: 20px;
+    }
+}
+@media all and (min-width: 800px){
+    .navbar-brand>img {
+        max-height: 250%;
+    }
+    #o_nas, #formularz, #functions_info, #funkcje_aplikacji, #zajawka{
+        height: 100vh;
+        display:flex;
+        justify-content: center;
+        flex-direction: column;
+        padding: 0;
+    }
+}
