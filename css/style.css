@@ -52,8 +52,9 @@ img {
     padding-bottom: 50px;
     text-align: center;
 }
-.fab {
-    color: #333;
+.fab, .fas {
+    color: #3B6C9B;
+    font-size: 40px;
 }
 
 #formularz {
