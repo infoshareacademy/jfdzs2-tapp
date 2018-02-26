@@ -16,9 +16,6 @@ img {
     margin: 0 auto;
 }
 
-.carousel-caption p {
-
-}
 .navbar-fixed-top {
     padding: 10px 30px 10px 30px;
 }
@@ -93,13 +90,14 @@ img {
 
 #funkcje_aplikacji h3 {
     font-weight: bold;
+    font-size: 30px;
 }
 
 #funkcje_aplikacji img {
-    max-width: 50px;
+    max-width: 80px;
 }
 .glyphicon {
-    font-size: 35px;
+    font-size:50px;
     margin-right: 10px;
 }
 
