@@ -40,13 +40,13 @@ img {
 /*ABOUT US SECTION*/
 
 .card {
-    box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.5);
+    box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2);
     padding: 0;
     margin-top: 15px;
     margin-bottom: 15px;
 }
 
-#o_nas {
+#about-us {
     background: #cdcdcd;
     padding-top: 50px;
     padding-bottom: 50px;
@@ -118,7 +118,16 @@ footer{
     .navbar-brand>img {
         max-height: 250%;
     }
-    #o_nas, #formularz, #functions_info, #funkcje_aplikacji, #zajawka{
+    #formularz, #functions_info, #funkcje_aplikacji, #zajawka{
+        height: 100vh;
+        display:flex;
+        justify-content: center;
+        flex-direction: column;
+        padding: 0;
+    }
+}
+@media all and (min-width: 1200px){
+    #about-us{
         height: 100vh;
         display:flex;
         justify-content: center;
