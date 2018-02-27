@@ -96,30 +96,39 @@ img {
 #funkcje_aplikacji img {
     max-width: 80px;
 }
-.glyphicon {
-    font-size:50px;
-    margin-right: 10px;
+.well .glyphicon {
+    font-size:70px;
+    margin-right: 5px;
+
 }
 
 .function_description {
-    margin-bottom: 15px;
+
 }
 
 #functions_info {
     background: #E9E9E9;
     padding-top: 70px;
     padding-bottom: 70px;
+    text-align: center;
 }
 footer{
     padding:20px;
 }
 @media all and (max-width: 800px){
+
+    .function_description {
+        padding: 20px;
+    }
     #zajawka{
         padding-top: 73px;
     }
-    .function_description {
-        padding: 15px;
+    .well {
+        padding: 30px;
         text-align: center;
+    }
+    #funkcje_aplikacji {
+        padding: 30px;
     }
     .logo {
         font-size:20px;
@@ -128,6 +137,7 @@ footer{
         font-size: 20px;
     }
 }
+
 @media all and (min-width: 800px){
     .navbar-brand>img {
         max-height: 250%;
