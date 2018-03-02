@@ -5,6 +5,10 @@ body {
     overflow-x: hidden;
 }
 
+img {
+    margin: 0 auto;
+}
+/*LOGO*/
 .logo {
     font-size: 50px;
 }
@@ -12,13 +16,10 @@ body {
     color: #333333;
 }
 
-img {
-    margin: 0 auto;
-}
-
 .carousel-caption p {
 
 }
+/*NAWIGACJA*/
 .navbar-fixed-top {
     padding: 10px 30px 10px 30px;
 }
@@ -38,6 +39,12 @@ img {
 }
 
 /*ABOUT US SECTION*/
+#about-us {
+    background: #cdcdcd;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+}
 
 .card {
     box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2);
@@ -46,17 +53,11 @@ img {
     margin-bottom: 15px;
 }
 
-#about-us {
-    background: #cdcdcd;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    text-align: center;
-}
 .fab, .fas {
-    color: #3B6C9B;
+    color: #1c476f;;
     font-size: 40px;
 }
-
+/*FORMULARZ*/
 #formularz {
     background: #99D3DF;
     padding-top: 50px;
@@ -68,6 +69,7 @@ img {
     color: black;
     margin: 20px;
 }
+/*FUNKCJE APLIKACJI*/
 #funkcje_aplikacji {
     background: #88BBD6;
     padding-top: 70px;
@@ -87,6 +89,7 @@ img {
     margin-right: 10px;
 }
 
+/*FUNKCJE APLIKACJI - ROZSZERZONE*/
 .function_description {
     margin-bottom: 15px;
 }
@@ -96,9 +99,11 @@ img {
     padding-top: 70px;
     padding-bottom: 70px;
 }
+/*FOOTER*/
 footer{
     padding:20px;
 }
+
 @media all and (max-width: 800px){
     #zajawka{
         padding-top: 73px;
@@ -114,6 +119,7 @@ footer{
         font-size: 20px;
     }
 }
+
 @media all and (min-width: 800px){
     .navbar-brand>img {
         max-height: 250%;
