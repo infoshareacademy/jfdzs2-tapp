@@ -112,9 +112,15 @@ img {
     padding-top: 70px;
     padding-bottom: 70px;
 }
+
 footer{
     padding:20px;
 }
+
+#google-translate-element{
+  padding:10px;
+}
+
 @media all and (max-width: 800px){
     #zajawka{
         padding-top: 73px;
