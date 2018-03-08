@@ -5,6 +5,10 @@ body {
     overflow-x: hidden;
 }
 
+img {
+    margin: 0 auto;
+}
+/*LOGO*/
 .logo {
     font-size: 50px;
 }
@@ -19,6 +23,7 @@ img {
 .carousel-caption p {
 
 }
+/*NAWIGACJA*/
 .navbar-fixed-top {
     padding: 10px 30px 10px 30px;
 }
@@ -38,41 +43,25 @@ img {
 }
 
 /*ABOUT US SECTION*/
-
-.card {
-    box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.8);
-    padding: 0;
-    margin-top: 15px;
-    margin-bottom: 15px;
-}
-
-#o_nas {
+#about-us {
     background: #cdcdcd;
     padding-top: 50px;
     padding-bottom: 50px;
     text-align: center;
 }
-/* Style all font awesome icons */
-.fa {
-    padding: 10px;
-    font-size: 20px;
-    text-align: center;
-    text-decoration: none;
+
+.card {
+    box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2);
+    padding: 0;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
-/* Add a hover effect if you want */
-.fa:hover {
-    opacity: 0.7;
+.fab, .fas {
+    color: #1c476f;;
+    font-size: 40px;
 }
-
-/* Set a specific color for each brand */
-
-/* Facebook */
-.fa-linkedin {
-    background: #3B5998;
-    color: white;
-}
-
+/*FORMULARZ*/
 #formularz {
     background: #99D3DF;
     padding-top: 50px;
@@ -84,6 +73,7 @@ img {
     color: black;
     margin: 20px;
 }
+/*FUNKCJE APLIKACJI*/
 #funkcje_aplikacji {
     background: #88BBD6;
     padding-top: 70px;
@@ -103,6 +93,7 @@ img {
     margin-right: 10px;
 }
 
+/*FUNKCJE APLIKACJI - ROZSZERZONE*/
 .function_description {
     margin-bottom: 15px;
 }
@@ -112,9 +103,11 @@ img {
     padding-top: 70px;
     padding-bottom: 70px;
 }
+/*FOOTER*/
 footer{
     padding:20px;
 }
+
 @media all and (max-width: 800px){
     #zajawka{
         padding-top: 73px;
@@ -130,11 +123,21 @@ footer{
         font-size: 20px;
     }
 }
+
 @media all and (min-width: 800px){
     .navbar-brand>img {
         max-height: 250%;
     }
-    #o_nas, #formularz, #functions_info, #funkcje_aplikacji, #zajawka{
+    #formularz, #functions_info, #funkcje_aplikacji, #zajawka{
+        height: 100vh;
+        display:flex;
+        justify-content: center;
+        flex-direction: column;
+        padding: 0;
+    }
+}
+@media all and (min-width: 1200px){
+    #about-us{
         height: 100vh;
         display:flex;
         justify-content: center;
