@@ -74,34 +74,33 @@ img {
     margin: 20px;
 }
 /*FUNKCJE APLIKACJI*/
-#funkcje_aplikacji {
+#app-functions {
     background: #88BBD6;
     padding-top: 70px;
     padding-bottom: 70px;
     text-align: center;
 }
 
-#funkcje_aplikacji h3 {
+#app-functions h3 {
     font-weight: bold;
+    font-size: 30px;
 }
 
-#funkcje_aplikacji img {
-    max-width: 50px;
+#app-functions img {
+    max-width: 80px;
 }
-.glyphicon {
-    font-size: 35px;
-    margin-right: 10px;
-}
+.well .glyphicon {
+    font-size:70px;
+    margin-right: 5px;
 
 /*FUNKCJE APLIKACJI - ROZSZERZONE*/
-.function_description {
-    margin-bottom: 15px;
-}
 
-#functions_info {
+
+#app-functions-extended {
     background: #E9E9E9;
     padding-top: 70px;
     padding-bottom: 70px;
+    text-align: center;
 }
 /*FOOTER*/
 footer{
@@ -109,12 +108,19 @@ footer{
 }
 
 @media all and (max-width: 800px){
+
+    .functions-description {
+        padding: 20px;
+    }
     #zajawka{
         padding-top: 73px;
     }
-    .function_description {
-        padding: 15px;
+    .well {
+        padding: 30px;
         text-align: center;
+    }
+    #app-functions {
+        padding: 30px;
     }
     .logo {
         font-size:20px;
@@ -128,12 +134,26 @@ footer{
     .navbar-brand>img {
         max-height: 250%;
     }
-    #formularz, #functions_info, #funkcje_aplikacji, #zajawka{
+    #o_nas, #formularz, #app-functions, #zajawka{
         height: 100vh;
         display:flex;
         justify-content: center;
         flex-direction: column;
         padding: 0;
+    }
+}
+
+@media all and (min-width: 992px){
+    #app-functions-extended {
+        height: 100vh;
+        display:flex;
+        justify-content: center;
+        flex-direction: column;
+        padding: 0;
+    }
+    .well .glyphicon {
+        margin-top: 20%;
+        margin-bottom: 30%;
     }
 }
 @media all and (min-width: 1200px){
