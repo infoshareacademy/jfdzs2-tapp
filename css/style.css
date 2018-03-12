@@ -5,9 +5,7 @@ body {
     overflow-x: hidden;
 }
 
-img {
-    margin: 0 auto;
-}
+
 /*LOGO*/
 .logo {
     font-size: 50px;
@@ -64,8 +62,16 @@ img {
 /*FORMULARZ*/
 #formularz {
     background: #99D3DF;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+    font-size: 18px;
+    height: 100vh;
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+}
+#form h1{
+    padding-bottom:50px;
 }
 
 .button:hover {
