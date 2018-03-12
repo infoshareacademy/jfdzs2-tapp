@@ -5,11 +5,11 @@ body {
     overflow-x: hidden;
 }
 
-
 /*LOGO*/
 .logo {
     font-size: 50px;
 }
+
 .logo a {
     color: #333333;
 }
@@ -21,6 +21,7 @@ img {
 .carousel-caption p {
 
 }
+
 /*NAWIGACJA*/
 .navbar-fixed-top {
     padding: 10px 30px 10px 30px;
@@ -31,11 +32,12 @@ img {
     border-color: #f8f8f894;
 }
 
-.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .active > a:hover {
     color: #555;
     background-color: transparent;
 }
-.navbar-brand>img {
+
+.navbar-brand > img {
     display: inline-block;
     max-height: 100%;
 }
@@ -59,6 +61,7 @@ img {
     color: #1c476f;;
     font-size: 40px;
 }
+
 /*FORMULARZ*/
 #formularz {
     background: #99D3DF;
@@ -66,12 +69,13 @@ img {
     padding-right: 50px;
     font-size: 18px;
     height: 100vh;
-    display:flex;
+    display: flex;
     justify-content: center;
     flex-direction: column;
 }
-#form h1{
-    padding-bottom:50px;
+
+#form h1 {
+    padding-bottom: 50px;
 }
 
 .button:hover {
@@ -79,6 +83,7 @@ img {
     color: black;
     margin: 20px;
 }
+
 /*FUNKCJE APLIKACJI*/
 #app-functions {
     background: #88BBD6;
@@ -95,12 +100,12 @@ img {
 #app-functions img {
     max-width: 80px;
 }
+
 .well .glyphicon {
-    font-size:70px;
+    font-size: 70px;
     margin-right: 5px;
-
+}
 /*FUNKCJE APLIKACJI - ROZSZERZONE*/
-
 
 #app-functions-extended {
     background: #E9E9E9;
@@ -108,64 +113,73 @@ img {
     padding-bottom: 70px;
     text-align: center;
 }
+
 /*FOOTER*/
-footer{
-    padding:20px;
+footer {
+    padding: 20px;
 }
 
-@media all and (max-width: 800px){
+@media all and (max-width: 800px) {
 
     .functions-description {
         padding: 20px;
     }
-    #zajawka{
+
+    #zajawka {
         padding-top: 73px;
     }
+
     .well {
         padding: 30px;
         text-align: center;
     }
+
     #app-functions {
         padding: 30px;
     }
+
     .logo {
-        font-size:20px;
+        font-size: 20px;
     }
+
     .carousel-caption p {
         font-size: 20px;
     }
 }
 
-@media all and (min-width: 800px){
-    .navbar-brand>img {
+@media all and (min-width: 800px) {
+    .navbar-brand > img {
         max-height: 250%;
     }
-    #o_nas, #formularz, #app-functions, #zajawka{
+
+    #o_nas, #formularz, #app-functions, #zajawka {
         height: 100vh;
-        display:flex;
+        display: flex;
         justify-content: center;
         flex-direction: column;
         padding: 0;
     }
 }
 
-@media all and (min-width: 992px){
+@media all and (min-width: 992px) {
     #app-functions-extended {
         height: 100vh;
-        display:flex;
+        display: flex;
         justify-content: center;
         flex-direction: column;
         padding: 0;
     }
+
     .well .glyphicon {
         margin-top: 20%;
         margin-bottom: 30%;
     }
 }
-@media all and (min-width: 1200px){
-    #about-us{
+
+@media all and (min-width: 1200px) {
+    #about-us {
         height: 100vh;
-        display:flex;
+        display: flex;
         justify-content: center;
         flex-direction: column;
         padding: 0;
