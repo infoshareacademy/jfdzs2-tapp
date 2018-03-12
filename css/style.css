@@ -112,6 +112,11 @@ img {
     padding-top: 70px;
     padding-bottom: 70px;
 }
+/*coocies*/
+.hide {
+    display: none
+}
+
 footer{
     padding:20px;
 }
