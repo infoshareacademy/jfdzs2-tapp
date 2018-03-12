@@ -73,11 +73,18 @@ img {
     color: white;
 }
 
-#formularz {
+#form {
     background: #99D3DF;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
     font-size: 18px;
+    height: 100vh;
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+}
+#form h1{
+    padding-bottom:50px;
 }
 
 .button:hover {
@@ -135,7 +142,7 @@ footer{
     .navbar-brand>img {
         max-height: 250%;
     }
-    #o_nas, #formularz, #functions_info, #funkcje_aplikacji, #zajawka{
+    #o_nas, #functions_info, #funkcje_aplikacji, #zajawka{
         height: 100vh;
         display:flex;
         justify-content: center;
