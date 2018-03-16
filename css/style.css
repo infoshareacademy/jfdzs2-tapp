@@ -29,14 +29,18 @@ img {
 }
 
 .navbar-default {
-    background-color: #f8f8f894;
-    border-color: #f8f8f894;
+    background-color: #fff;
 }
 
-.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
-    color: #555;
-    background-color: transparent;
+.pagination {
+    background-color:  #cdcdcd;
+
 }
+.pagination>li>a, .pagination>li>span {
+    border: 0;
+    
+}
+
 .navbar-brand>img {
     display: inline-block;
     max-height: 100%;
@@ -90,8 +94,9 @@ img {
     max-width: 80px;
 }
 .well .glyphicon {
-    font-size:70px;
+    font-size: 70px;
     margin-right: 5px;
+}
 
 /*FUNKCJE APLIKACJI - ROZSZERZONE*/
 
