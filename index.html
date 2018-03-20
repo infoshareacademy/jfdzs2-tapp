@@ -11,7 +11,7 @@
 
     <title>Co nas laczy</title>
 </head>
-<body>
+<body data-spy="scroll" data-target="#bs-example-navbar-collapse-1">
 <header>
     <nav class="navbar navbar-default navbar-fixed-top">
         <div class="navbar-header">
@@ -25,7 +25,7 @@
             <div class="navbar-brand logo"><img src="Multimedia_Connect_network-512.png"> Co nas łączy</div>
         </div>
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav navbar-right pagination">
+            <ul class="nav navbar-nav navbar-right" role="tablist">
                 <li><a href="#app-functions">Funkcje aplikacji</a></li>
                 <li><a href="#zajawka">Zajawka</a></li>
                 <li><a href="#formularz">Formularz</a></li>
@@ -35,6 +35,13 @@
         </div>
     </nav>
 </header>
+<script>
+    $('body').scrollspy({ target: '#navbar-example' })
+    $('[data-spy="scroll"]').each(function () {
+        var $spy = $(this).scrollspy('refresh')
+    })
+</script>
+
 <main>
 
     <div class="row">
