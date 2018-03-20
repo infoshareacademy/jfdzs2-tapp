@@ -134,7 +134,7 @@ footer{
     .navbar-brand>img {
         max-height: 250%;
     }
-    #o_nas, #formularz, #app-functions, #zajawka{
+    #o_nas, #formularz, #zajawka{
         height: 100vh;
         display:flex;
         justify-content: center;
@@ -144,7 +144,7 @@ footer{
 }
 
 @media all and (min-width: 992px){
-    #app-functions-extended {
+    #app-functions, #app-functions-extended {
         height: 100vh;
         display:flex;
         justify-content: center;
