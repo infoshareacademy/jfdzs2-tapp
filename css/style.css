@@ -6,31 +6,41 @@ body {
     overflow-x: hidden;
 }
 
-img {
-    margin: 0 auto;
-}
 /*LOGO*/
 .logo {
     font-size: 50px;
 }
 .logo a {
-    color: #333333;
+    color: #dddddd;
+    text-decoration: none;
+}
+.logo a:hover {
+    color: #99D3DF;
+}
+ul {
+    padding-top: 10px;
+
 }
 
-img {
-    margin: 0 auto;
-}
-
-.carousel-caption p {
-
-}
 /*NAWIGACJA*/
-.navbar-fixed-top {
-    padding: 10px 30px 10px 30px;
+.navbar-default .navbar-nav>li>a {
+    color: #dddddd ;
 }
-
+.navbar-default .navbar-nav>li>a:hover {
+    color: #99D3DF;
+}
+.navbar-fixed-top {
+    padding: 10px 10px 25px 10px;
+}
 .navbar-default {
-    background-color: #fff;
+    background-color: #08080887;
+    border: none;
+}
+.navbar-right {
+    padding-right: 50px;
+}
+.navbar-toggle {
+    margin-top: 15px;
 }
 
 .navbar-brand>img {
@@ -40,7 +50,14 @@ img {
 .nav-tabs>li>a {
     border-bottom: 0;
 }
-
+/*SNEAK PEAK*/
+.carousel-caption {
+    color: #ffffff;
+}
+.text {
+    background-color: #08080887;
+    padding: 10px;
+}
 /*ABOUT US SECTION*/
 #about-us {
     background: #cdcdcd;
@@ -107,14 +124,15 @@ footer{
     padding:20px;
 }
 
-@media all and (max-width: 800px){
+@media all and (max-width: 700px){
 
     .functions-description {
         padding: 20px;
     }
-    #zajawka{
-        padding-top: 73px;
+    #sneak-peak{
+        padding-top: 85px;
     }
+
     .well {
         padding: 30px;
         text-align: center;
@@ -126,20 +144,38 @@ footer{
         font-size:20px;
     }
     .carousel-caption p {
-        font-size: 20px;
+        font-size: 15px;
+    }
+    .logo a {
+        color: #858585;
+        text-decoration: none;
+    }
+    .navbar-default {
+        background-color: #f8f8f8;
+        border-color: #f8f8f894;
+    }
+    .navbar-default .navbar-nav>li>a {
+        color: #858585;
     }
 }
 
-@media all and (min-width: 800px){
+@media all and (min-width: 701px){
     .navbar-brand>img {
         max-height: 250%;
     }
-    #o_nas, #formularz, #zajawka{
+    #o_nas, #formularz,{
         height: 100vh;
         display:flex;
         justify-content: center;
         flex-direction: column;
         padding: 0;
+    }
+    .text {
+        padding-bottom: 70px;
+    }
+    .navbar-right {
+        padding-top: 8px;
+        padding-bottom: 8px;
     }
 }
 
