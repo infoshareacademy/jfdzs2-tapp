@@ -10,6 +10,7 @@ body {
 .logo {
     font-size: 50px;
 }
+
 .logo a {
     color: #dddddd;
     text-decoration: none;
@@ -36,14 +37,24 @@ ul {
     background-color: #08080887;
     border: none;
 }
-.navbar-right {
-    padding-right: 50px;
-}
-.navbar-toggle {
-    margin-top: 15px;
+/*<<<<<<< HEAD*/
+/*.navbar-right {*/
+    /*padding-right: 50px;*/
+/*}*/
+/*.navbar-toggle {*/
+    /*margin-top: 15px;*/
+/*}*/
+
+/*.navbar-brand>img {*/
+/*=======*/
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .active > a:hover {
+    color: #555;
+    background-color: transparent;
 }
 
-.navbar-brand>img {
+.navbar-brand > img {
+>>>>>>> feature-nav2
     display: inline-block;
     max-height: 100%;
 }
@@ -77,11 +88,13 @@ ul {
     color: #1c476f;;
     font-size: 40px;
 }
+
 /*FORMULARZ*/
-#formularz {
+#form {
     background: #99D3DF;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+    font-size: 18px;
 }
 
 .button:hover {
@@ -89,6 +102,7 @@ ul {
     color: black;
     margin: 20px;
 }
+
 /*FUNKCJE APLIKACJI*/
 #app-functions {
     background: #88BBD6;
@@ -105,13 +119,13 @@ ul {
 #app-functions img {
     max-width: 80px;
 }
+
 .well .glyphicon {
-    font-size: 70px;
+    font-size: 40px;
     margin-right: 5px;
 }
 
 /*FUNKCJE APLIKACJI - ROZSZERZONE*/
-
 
 #app-functions-extended {
     background: #E9E9E9;
@@ -119,30 +133,33 @@ ul {
     padding-bottom: 70px;
     text-align: center;
 }
+
 /*FOOTER*/
-footer{
-    padding:20px;
+footer {
+    padding: 20px;
 }
 
-@media all and (max-width: 700px){
+
+@media all and (max-width: 800px) {
 
     .functions-description {
         padding: 20px;
     }
-    #sneak-peak{
-        padding-top: 85px;
-    }
+
 
     .well {
         padding: 30px;
         text-align: center;
     }
+
     #app-functions {
         padding: 30px;
     }
+
     .logo {
-        font-size:20px;
+        font-size: 20px;
     }
+
     .carousel-caption p {
         font-size: 15px;
     }
@@ -159,13 +176,14 @@ footer{
     }
 }
 
-@media all and (min-width: 701px){
-    .navbar-brand>img {
+@media all and (min-width: 800px) {
+    .navbar-brand > img {
         max-height: 250%;
     }
-    #o_nas, #formularz,{
+
+    #about-us, #form, #app-functions, #sneak-peak {
         height: 100vh;
-        display:flex;
+        display: flex;
         justify-content: center;
         flex-direction: column;
         padding: 0;
@@ -179,23 +197,25 @@ footer{
     }
 }
 
-@media all and (min-width: 992px){
-    #app-functions, #app-functions-extended {
+@media all and (min-width: 992px) {
+    #app-functions-extended {
         height: 100vh;
-        display:flex;
+        display: flex;
         justify-content: center;
         flex-direction: column;
         padding: 0;
     }
+
     .well .glyphicon {
         margin-top: 20%;
         margin-bottom: 30%;
     }
 }
-@media all and (min-width: 1200px){
-    #about-us{
+
+@media all and (min-width: 1200px) {
+    #about-us {
         height: 100vh;
-        display:flex;
+        display: flex;
         justify-content: center;
         flex-direction: column;
         padding: 0;
