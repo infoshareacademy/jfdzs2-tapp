@@ -18,7 +18,7 @@ body {
     color: #99D3DF;
 }
 .logo-scrolled {
-    font-size: 40px;
+    font-size: 35px;
 }
 ul {
     padding-top: 10px;
@@ -64,10 +64,10 @@ ul {
     border-bottom: 0;
 }
 .navbar-scrolled {
-    height: 70px;
+    height: 60px;
     line-height: 75px;
     font-size: 20px;
-    padding-top: 5px;
+    padding-top: 1px;
 }
 .counter {
     width: 20px;
