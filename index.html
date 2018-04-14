@@ -3,17 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css?v=1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 </head>
-<body onload="startGame()">
+<div onload="startGame()">
 
-<div style="text-align:center;width:480px;">
-  <button onmousedown="move('up')" onmouseup="clearmove()" ontouchstart="move('up')">UP</button><br><br>
-  <button onmousedown="move('left')" onmouseup="clearmove()" ontouchstart="move('left')">LEFT</button>
-  <button onmousedown="move('right')" onmouseup="clearmove()" ontouchstart="move('right')">RIGHT</button><br><br>
-  <button onmousedown="move('down')" onmouseup="clearmove()" ontouchstart="move('down')">DOWN</button>
+
 </div>
+
+<div class="container">
+
+    <div class="item">
+        <div id="hey">
+            <img src="image/584854f3b772315a9e4dd5d2.png" width="150px" height="150px">
+        </div>
+    </div>
+    <div class="Box">
+        <img src="image/dexter.png" width="150px" height="150px">
+    </div>
+    <div id="droga">
+    </div>
+
+</div>
+
+
 <script src="js/script.js"></script>
 </body>
 </html>

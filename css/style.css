@@ -44,8 +44,8 @@ canvas {
 }
 
 .bounce {
-  -webkit-animation: 1s;
-  animation: 1s;
+  -webkit-animation: 3s;
+  animation: 3s;
   -webkit-animation-name: bounce;
   animation-name: bounce;
 }

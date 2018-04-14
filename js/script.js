@@ -1,153 +1,73 @@
-var myGamePiece;
-var myObstacles = [];
-var mySound;
-var myScore;
+element = document.getElementById("hey");
+element.addEventListener("click",function(e){
+    e.preventDefault;
+    element.classList.remove("bounce");
+    element.offsetWidth = element.offsetWidth;
+    element.classList.add("bounce");
+},false);
 
 
-
-function startGame() {
-  myGamePiece = new component(45, 90, "dexter.png", 10, 120, "image");
-  myScore = new component("50px", "Consolas", "red", 280, 40, "text");
-  mySound = new sound("bomb.mp3");
-  myGameArea.start();
-}
-
-var myGameArea = {
-  canvas : document.createElement("canvas"),
-  start : function() {
-    this.canvas.width = 1920;
-    this.canvas.height = 700;
-    this.context = this.canvas.getContext("2d");
-    document.body.insertBefore(this.canvas, document.body.childNodes[0]);
-    this.frameNo = 0;
-    this.interval = setInterval(updateGameArea, 20);
-  },
-  clear : function() {
-    this.context.clearRect(0, 0, this.canvas.width, this.canvas.height);
-  },
-  stop : function() {
-    clearInterval(this.interval);
-  }
-}
-
-function component(width, height, color, x, y, type) {
-  this.type = type;
-  if (type == "image") {
-    this.image = new Image();
-    this.image.src = color;
-  }
-
-  this.width = width;
-  this.height = height;
-  this.speedX = 0;
-  this.speedY = 0;
-  this.x = x;
-  this.y = y;
-  this.update = function() {
-    ctx = myGameArea.context;
-    if (type == "image") {
-      ctx.drawImage(this.image,
-        this.x,
-        this.y,
-        this.width, this.height);
+document.body.onkeyup = function(e){
+    if(e.keyCode == 32 ) {
+        //spacebar or enter clicks focused element
+        element = document.getElementById("hey");
+        element.classList.remove("bounce");
+        element.offsetWidth = element.offsetWidth;
+        element.classList.add("bounce");
     }
-     else if (this.type == "text") {
-        ctx.font = this.width + " " + this.height;
-        ctx.fillStyle = color;
-        ctx.fillText(this.text, this.x, this.y);
+};
+
+const FRAME_DURATION = 1000 / 1000; // 60fps frame duration
+// If available we are using native "performance" API instead of "Date"
+// It it's name suggests it is more performant, read more on MDN:
+// https://developer.mozilla.org/en-US/docs/Web/API/Performance
+const getTime = typeof performance === 'function' ? performance.now : Date.now;
+const MAX_POSITION = 1920;
+
+const box = document.querySelector('.Box');
+// Initial position
+let position = 1920;
+// Initial time
+let lastUpdate = getTime();
+
+function animate() {
+    const dexterPosition = box.getBoundingClientRect();
+    const kittyPos = element.getBoundingClientRect();
+    const kittyHeight = element.offsetHeight;
+    const kittyWidth = element.offsetWidth;
+
+    if((kittyPos.height + kittyPos.y) > dexterPosition.y) {
+      //console.log('dsfsdfsd');
+        var kittyX2 = kittyPos.x + kittyPos.width;
+      if (dexterPosition.x >= kittyPos.x && dexterPosition.x <= kittyX2) {
+        console.log('kolizja x');
       }
-      else {
-        ctx.fillStyle = color;
-        ctx.fillRect(this.x, this.y, this.width, this.height);
-      }
-
-  }
-  this.newPos = function() {
-    this.x += this.speedX;
-    this.y += this.speedY;
-  }
-  this.crashWith = function(otherobj) {
-    var myleft = this.x;
-    var myright = this.x + (this.width);
-    var mytop = this.y;
-    var mybottom = this.y + (this.height);
-    var otherleft = otherobj.x;
-    var otherright = otherobj.x + (otherobj.width);
-    var othertop = otherobj.y;
-    var otherbottom = otherobj.y + (otherobj.height);
-    var crash = true;
-    if ((mybottom < othertop) || (mytop > otherbottom) || (myright < otherleft) || (myleft > otherright)) {
-      crash = false;
     }
-    return crash;
-  }
-}
 
-function updateGameArea() {
-  var x, height, gap, minHeight, maxHeight, minGap, maxGap;
-  for (i = 0; i < myObstacles.length; i += 1) {
-    if (myGamePiece.crashWith(myObstacles[i])) {
-      mySound.play();
-      alert("GAME OVER!!! SPRÓBUJ JESZCZE RAZ! Twoj " + myScore.text)
-      myGameArea.stop();
-      return;
+    //console.log(kittyPos, kittyPos.height + kittyPos.y, dexterPosition.y);
+    const now = getTime();
+    // This is the main part
+    // We are checking how much time has passed since the last update
+    // and translating that to frames
+    const delta = (now - lastUpdate) / FRAME_DURATION;
+
+    // Updating scene logic
+    // We want to move the box 1px per each 16.66ms (60fps)
+    // so we are multipling 1px with the number of frames passed
+    position += 1 * delta;
+
+    // Reset position
+    if (position > MAX_POSITION) {
+        position -= MAX_POSITION;
     }
-  }
-  myGameArea.clear();
-  myGameArea.frameNo += 1;
-  if (myGameArea.frameNo == 1 || everyinterval(30)) {
-    x = myGameArea.canvas.width;
-    minHeight = 80;
-    maxHeight = 200;
-    height = Math.floor(Math.random()*(maxHeight-minHeight+1)+minHeight);
-    minGap = 120;
-    maxGap = 200;
-    gap = Math.floor(Math.random()*(maxGap-minGap+1)+minGap);
-    myObstacles.push(new component(69, height, "atom2.png", x, 0,"image"));
-    myObstacles.push(new component(80, height + gap , "atom_down.png", x, height + gap,"image"));
-  }
-  for (i = 0; i < myObstacles.length; i += 1) {
-    myObstacles[i].x -= 4;
-    myObstacles[i].update();
-  }
-  myScore.text="wynik: " + myGameArea.frameNo;
-  myScore.update();
-  myGamePiece.newPos();
-  myGamePiece.update();
+
+    // Render updated scene
+    box.style.transform = `translateX(${ position }px)`;
+
+    // Update last updated time
+    lastUpdate = now;
+
+    // Fake 10fps using "setTimeout"
+    setTimeout(animate, 10);
 }
-
-function sound(src) {
-  this.sound = document.createElement("audio");
-  this.sound.src = src;
-  this.sound.setAttribute("preload", "auto");
-  this.sound.setAttribute("controls", "none");
-  this.sound.style.display = "none";
-  document.body.appendChild(this.sound);
-  this.play = function(){
-    this.sound.play();
-
-  }
-  this.stop = function(){
-
-    this.sound.pause();
-  }
-}
-
-function everyinterval(n) {
-  if ((myGameArea.frameNo / n) % 1 == 0) {return true;}
-  return false;
-}
-
-function move(dir) {
-  myGamePiece.image.src = "dexter.png";
-  if (dir == "up") {myGamePiece.speedY = -5; }
-  if (dir == "down") {myGamePiece.speedY = 5; }
-  if (dir == "left") {myGamePiece.speedX = -5; }
-  if (dir == "right") {myGamePiece.speedX = 5; }
-}
-
-function clearmove() {
-  myGamePiece.image.src = "dexter.png";
-  myGamePiece.speedX = 0;
-  myGamePiece.speedY = 0;
-}
+animate();
