@@ -39,16 +39,7 @@ ul {
     background-color: #08080887;
     border: none;
 }
-/*<<<<<<< HEAD*/
-/*.navbar-right {*/
-    /*padding-right: 50px;*/
-/*}*/
-/*.navbar-toggle {*/
-    /*margin-top: 15px;*/
-/*}*/
 
-/*.navbar-brand>img {*/
-/*=======*/
 
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .active > a:hover {
     color: #99D3DF;
@@ -56,7 +47,6 @@ ul {
 }
 
 .navbar-brand > img {
->>>>>>> feature-nav2
     display: inline-block;
     max-height: 100%;
 }
