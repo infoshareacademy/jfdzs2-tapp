@@ -18,7 +18,7 @@ body {
     color: #99D3DF;
 }
 .logo-scrolled {
-    font-size: 35px;
+    font-size: 40px;
 }
 ul {
     padding-top: 10px;
@@ -39,16 +39,7 @@ ul {
     background-color: #08080887;
     border: none;
 }
-/*<<<<<<< HEAD*/
-/*.navbar-right {*/
-    /*padding-right: 50px;*/
-/*}*/
-/*.navbar-toggle {*/
-    /*margin-top: 15px;*/
-/*}*/
 
-/*.navbar-brand>img {*/
-/*=======*/
 
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .active > a:hover {
     color: #99D3DF;
@@ -56,7 +47,6 @@ ul {
 }
 
 .navbar-brand > img {
->>>>>>> feature-nav2
     display: inline-block;
     max-height: 100%;
 }
@@ -64,10 +54,10 @@ ul {
     border-bottom: 0;
 }
 .navbar-scrolled {
-    height: 60px;
+    height: 70px;
     line-height: 75px;
     font-size: 20px;
-    padding-top: 1px;
+    padding-top: 5px;
 }
 .counter {
     width: 20px;
