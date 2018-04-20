@@ -7,5 +7,7 @@ window.onscroll = function onScroll() {
 };
 
 function scrollToTop() {
-    document.documentElement.scrollTop = 0;
+    $( 'html, body' ).animate( { scrollTop : 0 }, 800 );
+    return false;
 }
+
