@@ -1,5 +1,5 @@
 function showNotice() {
-    if(localStorage.getItem('showCookieNotice') !== '') {
+    if(localStorage.getItem('showCookieNotice') !== 'false') {
         document.querySelector('#cookie-notice').classList.remove('hide');
     }
 }
