@@ -4,9 +4,27 @@ var mySound;
 var myScore;
 
 
+document.body.onkeydown = function(e){
+    if(e.keyCode == 38 ) {
+        move('up');
+    }
+    if(e.keyCode == 40 ) {
+        move('down');
+    }
+    if(e.keyCode == 39 ) {
+        move('right');
+    }
+    if(e.keyCode == 37 ) {
+        move('left');
+    }
+};
+
+document.body.onkeyup = function(e){
+  clearmove();
+};
 
 function startGame() {
-  myGamePiece = new component(45, 90, "dexter.png", 10, 120, "image");
+  myGamePiece = new component(45, 90, "mike.png", 10, 120, "image");
   myScore = new component("50px", "Consolas", "red", 280, 40, "text");
   mySound = new sound("bomb.mp3");
   myGameArea.start();
@@ -103,8 +121,8 @@ function updateGameArea() {
     minGap = 120;
     maxGap = 200;
     gap = Math.floor(Math.random()*(maxGap-minGap+1)+minGap);
-    myObstacles.push(new component(69, height, "atom2.png", x, 0,"image"));
-    myObstacles.push(new component(80, height + gap , "atom_down.png", x, height + gap,"image"));
+    myObstacles.push(new component(69, height, "boo.png", x, 0,"image"));
+    myObstacles.push(new component(80, height + gap , "boo.png", x, height + gap,"image"));
   }
   for (i = 0; i < myObstacles.length; i += 1) {
     myObstacles[i].x -= 4;
@@ -139,7 +157,7 @@ function everyinterval(n) {
 }
 
 function move(dir) {
-  myGamePiece.image.src = "dexter.png";
+  myGamePiece.image.src = "mike.png";
   if (dir == "up") {myGamePiece.speedY = -5; }
   if (dir == "down") {myGamePiece.speedY = 5; }
   if (dir == "left") {myGamePiece.speedX = -5; }
@@ -147,7 +165,7 @@ function move(dir) {
 }
 
 function clearmove() {
-  myGamePiece.image.src = "dexter.png";
+  myGamePiece.image.src = "mike.png";
   myGamePiece.speedX = 0;
   myGamePiece.speedY = 0;
 }
