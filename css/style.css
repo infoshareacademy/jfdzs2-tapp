@@ -140,12 +140,18 @@ footer {
     padding: 20px;
 }
 /*GAME*/
+#game-background {
+    background-color: #E9E9E9;
+    height: 100vh;
+}
+
 #game {
     height: 300px;
     margin-top: 300px;
 }
 #button-modal {
     background-color: lightgoldenrodyellow;
+    font-size: 20px;
 }
 
 @media all and (max-width: 800px) {
