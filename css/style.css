@@ -139,7 +139,14 @@ ul {
 footer {
     padding: 20px;
 }
-
+/*GAME*/
+#game {
+    height: 300px;
+    margin-top: 300px;
+}
+#button-modal {
+    background-color: lightgoldenrodyellow;
+}
 
 @media all and (max-width: 800px) {
 
