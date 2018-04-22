@@ -2,6 +2,7 @@ var myGamePiece;
 var myObstacles = [];
 var mySound;
 var myScore;
+var myMusic;
 
 
 document.body.onkeydown = function(e){
@@ -24,9 +25,11 @@ document.body.onkeyup = function(e){
 };
 
 function startGame() {
-  myGamePiece = new component(45, 90, "mike.png", 10, 120, "image");
-  myScore = new component("50px", "Consolas", "red", 280, 40, "text");
+  myGamePiece = new component(70, 70, "smiley_2.png", 10, 120, "image");
+  myScore = new component("50px", "Orbitron", "white", 280, 40, "text");
   mySound = new sound("bomb.mp3");
+  myMusic = new sound("mario.mp3");
+  myMusic.play();
   myGameArea.start();
 }
 
@@ -105,9 +108,10 @@ function updateGameArea() {
   var x, height, gap, minHeight, maxHeight, minGap, maxGap;
   for (i = 0; i < myObstacles.length; i += 1) {
     if (myGamePiece.crashWith(myObstacles[i])) {
+      myMusic.stop();
       mySound.play();
       alert("GAME OVER!!! SPRÓBUJ JESZCZE RAZ! Twoj " + myScore.text)
-      myGameArea.stop();
+        myGameArea.stop();
       return;
     }
   }
@@ -115,14 +119,14 @@ function updateGameArea() {
   myGameArea.frameNo += 1;
   if (myGameArea.frameNo == 1 || everyinterval(30)) {
     x = myGameArea.canvas.width;
-    minHeight = 80;
+    minHeight = 100;
     maxHeight = 200;
     height = Math.floor(Math.random()*(maxHeight-minHeight+1)+minHeight);
-    minGap = 120;
+    minGap = 200;
     maxGap = 200;
     gap = Math.floor(Math.random()*(maxGap-minGap+1)+minGap);
-    myObstacles.push(new component(69, height, "boo.png", x, 0,"image"));
-    myObstacles.push(new component(80, height + gap , "boo.png", x, height + gap,"image"));
+    myObstacles.push(new component(69, height, "cegly.png", x, 0,"image"));
+    myObstacles.push(new component(80, height + gap , "cegly.png", x, height + gap,"image"));
   }
   for (i = 0; i < myObstacles.length; i += 1) {
     myObstacles[i].x -= 4;
@@ -157,7 +161,7 @@ function everyinterval(n) {
 }
 
 function move(dir) {
-  myGamePiece.image.src = "mike.png";
+  myGamePiece.image.src = "smiley_2.png";
   if (dir == "up") {myGamePiece.speedY = -5; }
   if (dir == "down") {myGamePiece.speedY = 5; }
   if (dir == "left") {myGamePiece.speedX = -5; }
@@ -165,7 +169,7 @@ function move(dir) {
 }
 
 function clearmove() {
-  myGamePiece.image.src = "mike.png";
+  myGamePiece.image.src = "smiley_2.png";
   myGamePiece.speedX = 0;
   myGamePiece.speedY = 0;
 }
