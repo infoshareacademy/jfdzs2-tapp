@@ -105,6 +105,14 @@ ul {
     max-width: 100%;
     height: 300px;
 }
+.card-flip .front .card, .card-flip .back .card{
+    width: 100%;
+    height: 100%;
+}
+
+.card-text{
+    padding-top:20px;
+}
 
 .flip {
     transition: 0.6s;
@@ -112,8 +120,7 @@ ul {
     position: relative;
 }
 
-.front,
-.back {
+.front, .back {
     backface-visibility: hidden;
     position: absolute;
     top: 0;
@@ -127,8 +134,8 @@ ul {
 
 .back {
     transform: rotateY(180deg);
+    width: 100%;
 }
-
 /*FORMULARZ*/
 #form {
     background: #99D3DF;
@@ -215,6 +222,11 @@ footer {
     .navbar-default .navbar-nav>li>a {
         color: #858585;
     }
+
+    .card-flip, .front, .back {
+        padding: 5% 10% 5% 10%;
+    }
+
 }
 
 @media all and (min-width: 800px) {
@@ -222,7 +234,7 @@ footer {
         max-height: 250%;
     }
 
-    #about-us, #form, #app-functions, #sneak-peak {
+     #form, #app-functions, #sneak-peak {
         height: 100vh;
         display: flex;
         justify-content: center;
@@ -235,6 +247,9 @@ footer {
     .navbar-right {
         padding-top: 8px;
         padding-bottom: 8px;
+    }
+    .card-flip, .front, .back {
+        padding: 20px 0px 20px 0px;
     }
 }
 
@@ -253,6 +268,10 @@ footer {
     }
 }
 
+@media all and (max-width: 1200px){
+
+}
+
 @media all and (min-width: 1200px) {
     #about-us {
         height: 100vh;
@@ -260,5 +279,8 @@ footer {
         justify-content: center;
         flex-direction: column;
         padding: 0;
+    }
+    .card-flip, .front, .back {
+        padding: 20px 20px 20px 20px;
     }
 }
