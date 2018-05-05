@@ -138,6 +138,33 @@ ul {
 /*FOOTER*/
 footer {
     padding: 20px;
+        }
+/*coocies*/
+.hide {
+    display: none
+}
+
+#cookie-notice{
+    position: fixed;
+    padding-top: 10px;
+    padding-bottom:10px;
+    bottom: 0;
+    width: 100%;
+    background: #08080887;
+}
+
+#cookie-notice p{
+    font-size: 15px;
+    color: #ffffff;
+}
+
+#cookie-notice-button{
+    font-size: 15px;
+}
+
+footer{
+    padding:20px;
+>>>>>>> feature-cookies
 }
 
 
@@ -190,6 +217,7 @@ footer {
         flex-direction: column;
         padding: 0;
     }
+    
     .text {
         padding-bottom: 70px;
     }
