@@ -18,7 +18,7 @@ body {
     color: #99D3DF;
 }
 .logo-scrolled {
-    font-size: 40px;
+    font-size: 25px;
 }
 ul {
     padding-top: 10px;
@@ -93,8 +93,6 @@ ul {
 /*FORMULARZ*/
 #form {
     background: #99D3DF;
-    padding-left: 50px;
-    padding-right: 50px;
     font-size: 18px;
 }
 
@@ -164,7 +162,6 @@ footer {
 
 footer{
     padding:20px;
->>>>>>> feature-cookies
 }
 /*SCROLL TO TOP BUTTON*/
 #to-top-button {
@@ -227,7 +224,12 @@ footer{
         color: #858585;
     }
 }
-
+@media (min-width: 768px){
+    .navbar-nav>li>a {
+        padding-left: 5px;
+        padding-right: 10px;
+    }
+}
 @media all and (min-width: 800px) {
     .navbar-brand > img {
         max-height: 250%;
@@ -257,6 +259,10 @@ footer{
         justify-content: center;
         flex-direction: column;
         padding: 0;
+    }
+
+    .logo-scrolled {
+        font-size: 40px;
     }
 
     .well .glyphicon {
