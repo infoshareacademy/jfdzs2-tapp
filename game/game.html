@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tapp Game</title>
+    <link rel="stylesheet" href="game.css">
+    <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+</head>
+
+<body>
+<div class="menu visible" id="menuBox">
+    <h1 class="title">Tapp Game</h1>
+    <ul>
+        <li class="button button-start" onclick="startGame()" onclick="hideMenu()" id="startLnk">Start
+        </li>
+        <li class="button button-scores" id="scoresLnk">Wyniki</li>
+        <li class="button button-about" id="aboutLnk">Instrukcja</li>
+    </ul>
+</div>
+
+<div class="scores visible blur-fadeout" id="scoresBox">
+    <div class="popup button-teal button-scores">
+        <h1 class="title">Wyniki</h1>
+        <ol id="scoresList"></ol>
+        <br/>
+        <br/>
+        <button class="button">zamknij</button>
+    </div>
+</div>
+
+<div class="about blur-fadeout" id="aboutBox">
+    <div class="popup button-teal button-about">
+        <h1>Instrukcja</h1>
+        <p class="about_text">Zdobądź jak największą ilość punktów! </p>
+        <p class="about_text">Unikaj przeszkód poruszając się strzałkami na klawiaturze.<br/></p>
+        <p class="about_text">Każda przeżyta sekunda to dodatkowy punkt dla Ciebie.<br/>
+            <br/></p>
+        <button class="button">zamknij</button>
+    </div>
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>
