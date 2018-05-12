@@ -19,7 +19,7 @@
     </ul>
 </div>
 
-<div class="scores visible blur-fadeout" id="scoresBox">
+<div class="scores visible " id="scoresBox">
     <div class="popup button-teal button-scores">
         <h1 class="title">Wyniki</h1>
         <ol id="scoresList"></ol>
@@ -39,6 +39,15 @@
         <button class="button">zamknij</button>
     </div>
 </div>
-
+<script>
+    var tab=[];
+    for (let key in localStorage) {
+        tab.push(parseInt(localStorage[key]));
+    }
+    tab = tab.sort().reverse();
+    for (let key in tab) {
+        document.getElementById('scoresList').innerHTML += '<li>Wynik: <span>'+tab[key]+'</span></li>';
+    }
+</script>
 </body>
 </html>
