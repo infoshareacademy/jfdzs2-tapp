@@ -1,0 +1,239 @@
+body {
+    position: relative;
+    font-size: 24px;
+    color: #333333;
+    font-family: 'Jura', sans-serif;
+    overflow-x: hidden;
+}
+
+/*LOGO*/
+.logo {
+    font-size: 50px;
+}
+.logo a {
+    color: #dddddd;
+    text-decoration: none;
+}
+.logo a:hover {
+    color: #99D3DF;
+}
+.logo-scrolled {
+    font-size: 40px;
+}
+ul {
+    padding-top: 10px;
+
+}
+
+/*NAWIGACJA*/
+.navbar-default .navbar-nav>li>a {
+    color: #dddddd ;
+}
+.navbar-default .navbar-nav>li>a:hover {
+    color: #99D3DF;
+}
+.navbar-fixed-top {
+    padding: 10px 10px 25px 10px;
+}
+.navbar-default {
+    background-color: #08080887;
+    border: none;
+}
+
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .active > a:hover {
+    color: #99D3DF;
+    background-color: transparent;
+}
+
+.navbar-brand > img {
+    display: inline-block;
+    max-height: 100%;
+}
+.nav-tabs>li>a {
+    border-bottom: 0;
+}
+.navbar-scrolled {
+    height: 70px;
+    line-height: 75px;
+    font-size: 20px;
+    padding-top: 5px;
+}
+.counter {
+    width: 20px;
+}
+/*SNEAK PEAK*/
+.carousel-caption {
+    color: #ffffff;
+}
+.text {
+    background-color: #08080887;
+    padding: 10px;
+}
+/*ABOUT US SECTION*/
+#about-us {
+    background: #cdcdcd;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+.card {
+    box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2);
+    padding: 0;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.fab, .fas {
+    color: #1c476f;;
+    font-size: 40px;
+}
+
+/*FORMULARZ*/
+#form {
+    background: #99D3DF;
+    padding-left: 50px;
+    padding-right: 50px;
+    font-size: 18px;
+}
+
+.button:hover {
+    background-color: white;
+    color: black;
+    margin: 20px;
+}
+
+/*FUNKCJE APLIKACJI*/
+#app-functions {
+    background: #88BBD6;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    text-align: center;
+}
+
+#app-functions h3 {
+    font-weight: bold;
+    font-size: 30px;
+}
+
+#app-functions img {
+    max-width: 80px;
+}
+
+.well .glyphicon {
+    font-size: 40px;
+    margin-right: 5px;
+}
+
+/*FUNKCJE APLIKACJI - ROZSZERZONE*/
+
+#app-functions-extended {
+    background: #E9E9E9;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    text-align: center;
+}
+
+/*FOOTER*/
+footer {
+    padding: 20px;
+}
+/*GAME ARENA*/
+canvas {
+    background-color:darkgrey;
+    width: 100%;
+    height: 100%;
+}
+/*BUTTON*/
+a{
+    color: white;
+    text-decoration: none;
+}
+a:hover{
+    color: white;
+    text-decoration: none;
+}
+
+@media all and (max-width: 800px) {
+
+    .functions-description {
+        padding: 20px;
+
+    }
+
+
+    .well {
+        padding: 30px;
+        text-align: center;
+    }
+
+    #app-functions {
+        padding: 30px;
+    }
+
+    .logo {
+        font-size: 20px;
+    }
+
+    .carousel-caption p {
+        font-size: 15px;
+    }
+    .logo a {
+        color: #858585;
+        text-decoration: none;
+    }
+    .navbar-default {
+        background-color: #f8f8f8;
+        border-color: #f8f8f894;
+    }
+    .navbar-default .navbar-nav>li>a {
+        color: #858585;
+    }
+}
+
+@media all and (min-width: 800px) {
+    .navbar-brand > img {
+        max-height: 250%;
+    }
+
+    #about-us, #form, #app-functions, #sneak-peak {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding: 0;
+    }
+    .text {
+        padding-bottom: 70px;
+    }
+    .navbar-right {
+        padding-top: 8px;
+        padding-bottom: 8px;
+    }
+}
+
+@media all and (min-width: 992px) {
+    #app-functions-extended {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .well .glyphicon {
+        margin-top: 20%;
+        margin-bottom: 30%;
+    }
+}
+
+@media all and (min-width: 1200px) {
+    #about-us {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding: 0;
+    }
+}
