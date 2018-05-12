@@ -94,6 +94,22 @@ ul {
 #form {
     background: #99D3DF;
     font-size: 18px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+#form label{
+  padding-bottom: 20px;
+}
+
+#form p{
+    padding-top: 20px;
+}
+
+.form-text {
+    font-size: 25px;
+    font-weight: bold;
+    padding: 20px;
 }
 
 .button:hover {
@@ -192,9 +208,7 @@ footer{
 
     .functions-description {
         padding: 20px;
-
     }
-
 
     .well {
         padding: 30px;
@@ -235,14 +249,6 @@ footer{
         max-height: 250%;
     }
 
-    #about-us, #form, #app-functions, #sneak-peak {
-        height: 100vh;
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        padding: 0;
-    }
-    
     .text {
         padding-bottom: 70px;
     }
@@ -253,13 +259,6 @@ footer{
 }
 
 @media all and (min-width: 992px) {
-    #app-functions-extended {
-        height: 100vh;
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        padding: 0;
-    }
 
     .logo-scrolled {
         font-size: 40px;
