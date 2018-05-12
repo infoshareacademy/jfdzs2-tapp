@@ -90,53 +90,6 @@ ul {
     font-size: 40px;
 }
 
-/*FLIP ANIMATION IN ABOUT US SECTION*/
-.card-flip {
-    perspective: 1000px;
-}
-.card-flip:hover .flip,
-.card-flip.hover .flip {
-    transform: rotateY(180deg);
-
-}
-
-.card-flip,
-.front,
-.back {
-    max-width: 100%;
-    height: 300px;
-}
-.card-flip .front .card, .card-flip .back .card{
-    width: 100%;
-    height: 100%;
-}
-
-.card-text{
-    padding-top:20px;
-}
-
-.flip {
-    transition: 0.6s;
-    transform-style: preserve-3d;
-    position: relative;
-}
-
-.front, .back {
-    backface-visibility: hidden;
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-
-.front {
-    z-index: 2;
-    transform: rotateY(0deg);
-}
-
-.back {
-    transform: rotateY(180deg);
-    width: 100%;
-}
 /*FORMULARZ*/
 #form {
     background: #99D3DF;
@@ -185,58 +138,22 @@ ul {
 /*FOOTER*/
 footer {
     padding: 20px;
-        }
-/*coocies*/
-.hide {
-    display: none
 }
-
-#cookie-notice{
-    position: fixed;
-    padding-top: 10px;
-    padding-bottom:10px;
-    bottom: 0;
+/*GAME ARENA*/
+canvas {
+    background-color:darkgrey;
     width: 100%;
-    background: #08080887;
+    height: 100%;
 }
-
-#cookie-notice p{
-    font-size: 15px;
-    color: #ffffff;
+/*BUTTON*/
+a{
+    color: white;
+    text-decoration: none;
 }
-
-#cookie-notice-button{
-    font-size: 15px;
+a:hover{
+    color: white;
+    text-decoration: none;
 }
-
-footer{
-    padding:20px;
->>>>>>> feature-cookies
-}
-/*SCROLL TO TOP BUTTON*/
-#to-top-button {
-    display: none;
-    position: fixed;
-    bottom: 20px;
-    right: 30px;
-    z-index: 99;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    padding: 15px;
-    background-color: #ffffff;
-    border-radius: 10px;
-    font-size: 18px;
-}
-#to-top-button .fas.fa-arrow-up {
-    color: #1c476f;
-}
-
-
-#to-top-button:hover {
-    background-color: #88BBD6;
-}
-
 
 @media all and (max-width: 800px) {
 
@@ -273,11 +190,6 @@ footer{
     .navbar-default .navbar-nav>li>a {
         color: #858585;
     }
-
-    .card-flip, .front, .back {
-        padding: 5% 10% 5% 10%;
-    }
-
 }
 
 @media all and (min-width: 800px) {
@@ -285,23 +197,19 @@ footer{
         max-height: 250%;
     }
 
-     #form, #app-functions, #sneak-peak {
+    #about-us, #form, #app-functions, #sneak-peak {
         height: 100vh;
         display: flex;
         justify-content: center;
         flex-direction: column;
         padding: 0;
     }
-    
     .text {
         padding-bottom: 70px;
     }
     .navbar-right {
         padding-top: 8px;
         padding-bottom: 8px;
-    }
-    .card-flip, .front, .back {
-        padding: 20px 0px 20px 0px;
     }
 }
 
@@ -320,10 +228,6 @@ footer{
     }
 }
 
-@media all and (max-width: 1200px){
-
-}
-
 @media all and (min-width: 1200px) {
     #about-us {
         height: 100vh;
@@ -331,8 +235,5 @@ footer{
         justify-content: center;
         flex-direction: column;
         padding: 0;
-    }
-    .card-flip, .front, .back {
-        padding: 20px 20px 20px 20px;
     }
 }
