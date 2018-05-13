@@ -10,36 +10,42 @@ body {
 .logo {
     font-size: 50px;
 }
+
 .logo a {
     color: #dddddd;
     text-decoration: none;
 }
+
 .logo a:hover {
     color: #99D3DF;
 }
+
 .logo-scrolled {
-    font-size: 40px;
+    font-size: 25px;
 }
+
 ul {
     padding-top: 10px;
 
 }
 
 /*NAWIGACJA*/
-.navbar-default .navbar-nav>li>a {
-    color: #dddddd ;
+.navbar-default .navbar-nav > li > a {
+    color: #dddddd;
 }
-.navbar-default .navbar-nav>li>a:hover {
+
+.navbar-default .navbar-nav > li > a:hover {
     color: #99D3DF;
 }
+
 .navbar-fixed-top {
     padding: 10px 10px 25px 10px;
 }
+
 .navbar-default {
     background-color: #08080887;
     border: none;
 }
-
 
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .active > a:hover {
     color: #99D3DF;
@@ -50,26 +56,32 @@ ul {
     display: inline-block;
     max-height: 100%;
 }
-.nav-tabs>li>a {
+
+.nav-tabs > li > a {
     border-bottom: 0;
 }
+
 .navbar-scrolled {
     height: 70px;
     line-height: 75px;
     font-size: 20px;
     padding-top: 5px;
 }
+
 .counter {
     width: 20px;
 }
+
 /*SNEAK PEAK*/
 .carousel-caption {
     color: #ffffff;
 }
+
 .text {
     background-color: #08080887;
     padding: 10px;
 }
+
 /*ABOUT US SECTION*/
 #about-us {
     background: #cdcdcd;
@@ -94,6 +106,7 @@ ul {
 .card-flip {
     perspective: 1000px;
 }
+
 .card-flip:hover .flip,
 .card-flip.hover .flip {
     transform: rotateY(180deg);
@@ -106,13 +119,14 @@ ul {
     max-width: 100%;
     height: 300px;
 }
-.card-flip .front .card, .card-flip .back .card{
+
+.card-flip .front .card, .card-flip .back .card {
     width: 100%;
     height: 100%;
 }
 
-.card-text{
-    padding-top:20px;
+.card-text {
+    padding-top: 20px;
 }
 
 .flip {
@@ -137,12 +151,27 @@ ul {
     transform: rotateY(180deg);
     width: 100%;
 }
+
 /*FORMULARZ*/
 #form {
     background: #99D3DF;
-    padding-left: 50px;
-    padding-right: 50px;
     font-size: 18px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+#form label {
+    padding-bottom: 20px;
+}
+
+#form p {
+    padding-top: 20px;
+}
+
+.form-text {
+    font-size: 25px;
+    font-weight: bold;
+    padding: 20px;
 }
 
 .button:hover {
@@ -185,34 +214,35 @@ ul {
 /*FOOTER*/
 footer {
     padding: 20px;
-        }
+}
+
 /*coocies*/
 .hide {
     display: none
 }
 
-#cookie-notice{
+#cookie-notice {
     position: fixed;
     padding-top: 10px;
-    padding-bottom:10px;
+    padding-bottom: 10px;
     bottom: 0;
     width: 100%;
     background: #08080887;
 }
 
-#cookie-notice p{
+#cookie-notice p {
     font-size: 15px;
     color: #ffffff;
 }
 
-#cookie-notice-button{
+#cookie-notice-button {
     font-size: 15px;
 }
 
-footer{
-    padding:20px;
->>>>>>> feature-cookies
+footer {
+    padding: 20px;
 }
+
 /*SCROLL TO TOP BUTTON*/
 #to-top-button {
     display: none;
@@ -228,23 +258,20 @@ footer{
     border-radius: 10px;
     font-size: 18px;
 }
+
 #to-top-button .fas.fa-arrow-up {
     color: #1c476f;
 }
-
 
 #to-top-button:hover {
     background-color: #88BBD6;
 }
 
-
 @media all and (max-width: 800px) {
 
     .functions-description {
         padding: 20px;
-
     }
-
 
     .well {
         padding: 30px;
@@ -262,15 +289,18 @@ footer{
     .carousel-caption p {
         font-size: 15px;
     }
+
     .logo a {
         color: #858585;
         text-decoration: none;
     }
+
     .navbar-default {
         background-color: #f8f8f8;
         border-color: #f8f8f894;
     }
-    .navbar-default .navbar-nav>li>a {
+
+    .navbar-default .navbar-nav > li > a {
         color: #858585;
     }
 
@@ -280,38 +310,35 @@ footer{
 
 }
 
+@media (min-width: 768px) {
+    .navbar-nav > li > a {
+        padding-left: 5px;
+        padding-right: 10px;
+    }
+}
+
 @media all and (min-width: 800px) {
     .navbar-brand > img {
         max-height: 250%;
     }
 
-     #form, #app-functions, #sneak-peak {
-        height: 100vh;
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        padding: 0;
-    }
-    
     .text {
         padding-bottom: 70px;
     }
+
     .navbar-right {
         padding-top: 8px;
         padding-bottom: 8px;
     }
+
     .card-flip, .front, .back {
         padding: 20px 0px 20px 0px;
     }
 }
 
 @media all and (min-width: 992px) {
-    #app-functions-extended {
-        height: 100vh;
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        padding: 0;
+    .logo-scrolled {
+        font-size: 40px;
     }
 
     .well .glyphicon {
@@ -320,18 +347,7 @@ footer{
     }
 }
 
-@media all and (max-width: 1200px){
-
-}
-
 @media all and (min-width: 1200px) {
-    #about-us {
-        height: 100vh;
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        padding: 0;
-    }
     .card-flip, .front, .back {
         padding: 20px 20px 20px 20px;
     }
