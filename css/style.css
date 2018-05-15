@@ -76,6 +76,9 @@ ul {
 .carousel-caption {
     color: #ffffff;
 }
+#sneak-peak{
+    max-height:100vh;
+}
 
 .text {
     background-color: #08080887;
