@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tapp Game</title>
+    <link rel="stylesheet" href="css/game.css">
+    <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
+<body>
+
+<div class="menu visible" id="menuBox">
+    <h1 class="title">Tapp Game</h1>
+    <ul>
+        <li class="button button-start" onclick="startGame()" onclick="hideMenu()" id="startLnk">
+            <a href="level.html" target="_top">Start</a>
+        </li>
+        <li class="button button-scores" data-toggle="modal" data-target="#scores" id="scoresLnk">Wyniki</li>
+        <li class="button button-about" data-toggle="modal" data-target="#about" id="aboutLnk">Instrukcja</li>
+    </ul>
+</div>
+
+<div class="container">
+
+    <div class="modal fade" id="scores" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Wyniki</h4>
+                </div>
+                <div class="modal-body">
+                    <ol id="scoresList"></ol>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Zamknij</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+<div class="container">
+    <div class="modal fade" id="about" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Instrukcja</h4>
+                </div>
+                <div class="modal-body">
+                    <p class="about_text">Zdobądź jak największą ilość punktów! </p>
+                    <p class="about_text">Unikaj przeszkód poruszając się strzałkami na klawiaturze.<br/></p>
+                    <p class="about_text">Każda przeżyta sekunda to dodatkowy punkt dla Ciebie.<br/>
+                        <br/></p>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Zamknij</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script>
+        var tab = [];
+        for (let key in localStorage) {
+            tab.push(parseInt(localStorage[key]));
+        }
+        tab = tab.sort().reverse();
+        for (let key in tab) {
+            document.getElementById('scoresList').innerHTML += '<li>Wynik: <span>' + tab[key] + '</span></li>';
+        }
+    </script>
+
+</body>
+</html>
